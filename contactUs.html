@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contactUs</title>
+	<link rel="stylesheet" href="index.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #ffffff;
+		}
+
+		form {
+			background-color: #9e021c;
+			border-radius: 5px;
+			padding: 20px;
+			width: 500px;
+			margin: 50px auto;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #d90429;
+			color: hsl(0, 9%, 96%);
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+
+		label {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 5px;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="nav " style="background-color:white;">
+			<i class='bx bx-menu' id="menu-icon"></i>
+			<img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;">
+			<a href="#" class="logo">Auto <span>Parts</span> </a>
+			<ul class="navbar">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="companies.html">Companies</a></li>
+				<li><a href="Parts.html">Parts</a></li>
+				<li><a href="aboutUs.html">About us</a></li>
+				<li><a href="contactUs.html">Contact us</a></li>
+				<li><a href="Funpage/funpage.html">FunPage</a></li>
+				<li><a href="Questionnaire.html">Questionnaire</a></li>
+				<li><a href="Order.html">Order</a></li>
+				<li><a href="Auto_parts_services.html">Services</a></li>
+			</ul>
+			<i class='bx bx-search' id="search-icon"></i>
+			<div class="search-box container">
+				<input type="search" neam="" id="" placeholder="Search hear...">
+			</div>
+		</div>
+	</header>
+	<br><br><br><br><br>
+	<br><br>
+	<br><br><br>
+	<form action="contactUs.php" method="post" >
+		<label for="name">Name:</label>
+		<input
+		  placeholder="Enter your Name"
+		  type="text"
+		  id="name"
+		  name="name"
+		/>
+
+		<label for="email">Email:</label>
+		<input
+		  placeholder="Enter your email address"
+		  type="email"
+		  id="email"
+		  name="email"
+		/>
+
+		<label for="message">Message:</label>
+		<textarea
+		  placeholder="Enter your Message"
+		  type="text"
+		  id="message"
+		  name="message"
+		  rows="5"
+		  cols="50"
+		></textarea>
+
+		<input id="submit-button" type="submit" value="Submit" />
+	  </form>
+
+
+
+
+	<section class="footer">
+		<div class="footer-container container">
+			<div class="footer-box">
+				<a href="#" class="logo">Auto Parts <span>Point</span></a>
+				<div class="social">
+					<a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+					<a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.gmail.com/"><i class='bx bx-mail-send'></i></a>
+					<a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+
+				</div>
+				<div class="footer-box">
+					<h3>Page</h3>
+					<a href="index.html">Home</a>
+					<a href="companies.html">Cars</a>
+					<a href="Parts.html">Parts</a>
+					<a href="aboutUs.html">aboutUs</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<br><br>
+	<footer style="background-color: #333;color: white;padding: 20px;text-align: center;">
+		<p>&copy; Auto Parts 2023</p>
+	</footer>
+
+
+
+
+	
+	
+
+
+</body>
+
+</html>

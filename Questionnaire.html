@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title> Questionnaire Form </title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Questionnaire.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav " style="background-color:white;">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;">
+            <a href="#" class="logo">Auto <span>Parts</span> </a>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="Parts.html">Parts</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="Funpage/funpage.html">FunPage</a></li>
+                <li><a href="Questionnaire.html">Questionnaire</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="Auto_parts_services.html">Services</a></li>
+            </ul>
+            <i class='bx bx-search' id="search-icon"></i>
+            <div class="search-box container">
+                <input type="search" neam="" id="" placeholder="Search hear...">
+            </div>
+        </div>
+    </header>
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+    <section class="momdiv">
+        <h1 style="margin-left: 5%;" id="move1">QUESTIONNAIRE</h1>
+        <br>
+        <img src="img/at.jpg" alt="logo" style="height: 80px; width: 100px;margin-left: 6%;">
+
+        <br>
+
+        <div class="container">
+            <form id="form">
+                <div class="row">
+                    <div class="label">
+                        <label>Name</label>
+                    </div>
+                    <div class="input">
+                        <input id="name" type="text" name="Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label>Email</label>
+                    </div>
+                    <div class="input">
+                        <input id="email" type="email" name="Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label>Age</label>
+                    </div>
+                    <div class="input">
+                        <input type="number" name="Age">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label>Occupation</label>
+                    </div>
+                    <div class="select">
+                        <select class="select-box">
+                            <option>Student</option>
+                            <option>Job holder</option>
+                            <option>freelancer</option>
+                            <option>unemployed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label>How likely would you reccomend our website?</label>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <input type="radio" id="Def" name="reccomend" value="Definetly"><label>Definetly</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="like" name="reccomend" value="Likely"><label>Likely</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="unlike" name="reccomend" value="Unlikely"><label>Unlikely</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="never" name="reccomend" value="Never"><label>Never</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label>What are the spare parts that you always need?</label>
+                    </div>
+                    <div class="select">
+                        <select class="select-box">
+                            <option>Engine Spare Parts</option>
+                            <option>Mechanical Parts</option>
+                            <option>Electical Parts</option>
+                            <option>Structural Parts</option>
+                            <option>Car consumables</option>
+                            <option>Car tires</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label>What company would you prefer to own a car from? </label>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <input type="checkbox" name="cuisines" value="Arabic"><label>Gulf cars </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cuisines" value="Asian"><label>American cars </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cuisines" value="Western"><label>German cars</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cuisines" value="International"><label>Japanese cars</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cuisines" value="International"><label>korean cars</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="cuisines" value="International"><label>Chinese cars</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="submit">
+                    <button type="submit" onclick="return radioValidation();">Submit</button>
+                </div>
+
+
+                
+
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

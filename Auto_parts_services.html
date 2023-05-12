@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parts</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        form {
+            background-color: #8e797d1f;
+            border-radius: 5px;
+            padding: 20px;
+            height: 750px;
+            width: 500px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav " style="background-color:white;">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;">
+            <a href="#" class="logo">Auto <span>Parts</span> </a>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="Parts.html">Parts</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="Funpage/funpage.html">FunPage</a></li>
+                <li><a href="Questionnaire.html">Questionnaire</a></li>
+                <li><a href="Order.html">Order</a></li>
+                <li><a href="Auto_parts_services.html">Services</a></li>
+            </ul>
+            
+          
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <br>
+    <br>
+    <section class="Parts" id="parts">
+        <div class="heading">
+            <span >Auto parts services </span>
+            <h2>  Additional services we offer to our clients</h2>
+
+
+          
+        </div>
+
+
+        <form action="search.php" method="post" style="height: auto;">
+            <h3> Auto parts search</h3>
+            <br>
+            <img src="img/part1.png" alt="">   
+            <br>  
+            <label for="auto_number">Manufacturing year:</label>
+            <input placeholder="Enter auto part manufacturing year: " type="text" id="manufacturing_year" name="manufacturing_year" />
+            <input id="submit-button" type="submit" value="Submit" />              
+        </form>
+
+            <form action="insert.php" method="post" style="height: auto;">
+                <h3>Insert auto parts</h3>
+                <br>
+                <img src="img/auto-repair1.png" alt="">
+                
+                <br>
+                <label for="car_type">Car type:</label>
+		        <input placeholder="Enter your car type :" type="text" id="car_type" name="car_type" />
+
+                <label for="auto_name">Auto name:</label>
+		        <input placeholder="Enter auto name :" type="text" id="auto_name" name="auto_name" />
+
+                <label for="auto_number">Auto number:</label>
+		        <input placeholder="Enter auto number :" type="text" id="auto_number" name="auto_number" />
+                
+                <label for="manufacturing_year">manufacturing year:</label>
+		        <input placeholder="Enter auto part manufacturing year :" type="text" id="manufacturing_year" name="manufacturing_year" />
+
+                <input id="submit-button" type="submit" value="Submit" />
+
+            </form>
+
+            <form action="delet.php" method="post" style="height: auto;">
+                    <h3>Delete auto parts</h3>
+                    <br>
+                    <img src="img/p2.jpg" alt="">   
+                    <br>  
+                    <label for="auto_number">Auto number:</label>
+                    <input placeholder="Enter auto part number " type="number" id="auto_number" name="auto_number" />
+                    <input id="submit-button" type="submit" value="Submit" />              
+                </form>
+            
+            
+           
+
+        </div>
+
+    </section>
+    <br>
+    <br>
+
+   
+    <br><br>
+    <footer style="background-color: #333;color: white;padding: 20px;text-align: center;">
+        <p>&copy; Auto Parts 2023</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>companies</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  
+  <script>
+    $(document).ready(function(){
+  
+          $('#btn').click(function(){
+              $('#par').toggle(4000)
+            })
+        
+        })
+        
+</script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="nav" style="background-color:white;">
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;">
+      <a href="#" class="logo">Auto <span>Parts</span> </a>
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="companies.html">Companies</a></li>
+        <li><a href="Parts.html">Parts</a></li>
+        <li><a href="aboutUs.html">About us</a></li>
+        <li><a href="contactUs.html">Contact us</a></li>
+        <li><a href="Funpage/funpage.html">FunPage</a></li>
+        <li><a href="Questionnaire.html">Questionnaire</a></li>
+        <li><a href="Order.html">Order</a></li>
+        <li><a href="Auto_parts_services.html">Services</a></li>
+      </ul>
+      <i class='bx bx-search' id="search-icon"></i>
+      <div class="search-box container">
+        <input type="search" neam="" id="" placeholder="Search hear...">
+      </div>
+    </div>
+  </header>
+  <br> <br><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="momdiv">
+    <input type="text" id="rest_name" value="Auto Parts" disabled="true">
+    <h2> ORDER </h2>
+    <table class="order-th " width="40%" id="alignment">
+      <tr>
+        <th>Parts Item </th>
+        <th></th>
+        <th> Average Price</th>
+      </tr>
+      <tr>
+        <td> Engine Spare Parts </td>
+        <td> - </td>
+        <td> 280.9 RO</td>
+      </tr>
+      <tr>
+        <td> Mechanical Parts </td>
+        <td> - </td>
+        <td> 100.5 RO</td>
+      </tr>
+      <tr>
+        <td>Electical Parts</td>
+        <td> - </td>
+        <td> 50.3 RO</td>
+      </tr>
+      <tr>
+        <td> Structural Parts </td>
+        <td> - </td>
+        <td> 1000 RO </td>
+      </tr>
+      <tr>
+        <td>Car consumables</td>
+        <td> - </td>
+        <td> 40.3 RO </td>
+      </tr>
+      <tr>
+        <td>Car tires</td>
+        <td> - </td>
+        <td> 150.7 RO </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>Customer Name:</td>
+        <td>
+          <input type="text" id="cust_name" value="" required="true">
+        </td>
+      </tr>
+      <tr>
+        <td>Custmer Contact: </td>
+        <td>
+          <input type="text" id="contact" value=" " required="true">
+        </td>
+      </tr>
+      <tr>
+        <p>There is 20% discount for students</p>
+        <label>Are you student ? <input type="checkbox" id="student" name="student" value="cheacked"
+            onclick="myFunction()"></label>
+      </tr>
+    </table>
+    <br>
+    <form name="tblform">
+      <table width="80%" id="alignment">
+        <tr>
+          <th>Auto Parts Item</th>
+          <th> </th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Nissan :</td>
+          <td>
+            <select id="item1" onchange="Nissan(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q1"></td>
+          <td><input type="text" id="p1"></td>
+        </tr>
+        <tr>
+          <td>Toyota :</td>
+          <td>
+            <select id="item2" onchange="Toyota(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q2"></td>
+          <td><input type="text" id="p2"></td>
+        </tr>
+        <tr>
+          <td>mercedes:</td>
+          <td>
+            <select id="item3" onchange="mercedes(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q3"></td>
+          <td><input type="text" id="p3"></td>
+        </tr>
+        <tr>
+          <td>Audi:</td>
+          <td>
+            <select id="item4" onchange="Audi(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q4"></td>
+          <td><input type="text" id="p4"></td>
+        </tr>
+        <tr>
+          <td>BMW:</td>
+          <td>
+            <select id="item5" onchange="BMW(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q5"></td>
+          <td><input type="text" id="p5"></td>
+        </tr>
+        <tr>
+          <td>jeep:</td>
+          <td>
+            <select id="item6" onchange="jeep(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q6"></td>
+          <td><input type="text" id="p6"></td>
+        </tr>
+        <tr>
+          <td>GMC:</td>
+          <td>
+            <select id="item7" onchange="GMC(this.value);">
+              <option value="1">--Select Item--</option>
+              <option value="Engine Spare Parts">Engine Spare Parts</option>
+              <option value=" Mechanical Parts ">Mechanical Parts</option>
+              <option value="Electical Parts">Electical Parts</option>
+              <option value="Structural Parts">Structural Parts</option>
+              <option value="Car consumables ">Car consumables </option>
+              <option value="Car tires ">Car tires </option>
+            </select>
+          </td>
+          <td><input type="number" value="1" id="q7"></td>
+          <td><input type="text" id="p7"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+          <td><input type="reset" class="button" value="Clear"></td>
+        </tr>
+      </table>
+
+    </form>
+    <br>
+    <br>
+    <button id="btn"> click here!</button>
+    
+  </div>
+
+  <br>
+  <br>
+  
+
+
+  
+  <p id="par" style="color: #cdc1c3 ; size: 2px; background-color: #d90429; padding-left: 45%;">Thanks for ordering from our site.</p>
+  <script src="Order.js"></script>
+</body>
+
+</html>
